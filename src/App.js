@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import TestimonialCard from './components/Testimonials/TestimonialCard';
+import DoctorTestimonials from './components/Testimonials/DoctorsTestimonials';
+import Navbar from './components/LandingPage/LandingPage';
+import Hero from './components/Hero/Hero';
+// import BookingForm from './components/BookingForm/BookingForm';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" text-white min-h-screen">
+      <Navbar/>
+      <Hero/>
+      <DoctorTestimonials/>
+      <TestimonialCard/>
+
     </div>
   );
-}
+};
 
 export default App;
